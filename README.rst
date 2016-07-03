@@ -9,7 +9,6 @@ Usage
 .. code:: python
 
     from pytranspose import transpose
-
     # assume you have time serise data of temperature in variouse city.
     #
     # a[city][time] -> temperature
@@ -19,10 +18,8 @@ Usage
     #
     # b = transpose(a, [1, 0])
     # b[time][city] -> temperature
-
     # print(a["Tokyo"][2]) -> 28
     a = {"Tokyo": [27, 28, 29], "New York": [25, 24, 28]}
-
     # print(b[1]["New York"]) -> 24
     b = transpose(a)
 
